@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import AboutImageSection from "../assets/about-section.jpg";
+import AboutImageSection from "../assets/whyChooseUs-section.jpg";
 
 const About = () => {
   return (
     <>
-      <AboutTitle>Crossfit Fever & Hyrox</AboutTitle>
       <AboutMainContainer>
         <AboutImage src={AboutImageSection} alt="About Us" />
         <AboutContentContainer>
@@ -34,19 +33,21 @@ const AboutMainContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: space-around;
   text-align: center;
-  margin: 0;
+  margin: 3% 10% 5% 10%;
 `;
 
 const AboutContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-const AboutTitle = styled.h1`
-  font-size: 2.5rem;
-  text-align: center;
+  gap: 2rem;
+  align-items: center;
+  width: 50%;
+  .button-sporty {
+  width: fit-content;
+  }
 `;
 
 const AboutContent = styled.p`
@@ -55,8 +56,7 @@ const AboutContent = styled.p`
 `;
 
 const AboutImage = styled.img`
-  width: 50%;
-  max-width: 600px;
+  width: 30%;
   margin: 2rem 0;
   border-radius: 8px;
 `;

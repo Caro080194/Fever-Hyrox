@@ -26,12 +26,30 @@ const HeroContainer = styled.div`
   background-size: cover;
   background-position: center;
   text-align: center;
-  margin: 20% 0;
+
+  @media (max-width: 768px) {
+    height: 500px;
+    max-width: 100%;
+  }
 `;
 
-const HeroContent = styled.div``;
+const HeroContent = styled.div`
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+`;
 
-const HeroTitle = styled.h1``;
+const HeroTitle = styled.h1`
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 20px;
+`;
 
-const HeroSubtitle = styled.p``;
+const HeroSubtitle = styled.p`
+  font-size: 18px;
+  margin-bottom: 20px;
+`;
 

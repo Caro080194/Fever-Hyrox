@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WhyChooseUsImg from "../assets/whyChooseUs-section.jpg";
+import WhyChooseUsImg from "../assets/about-section.jpg";
 
 const WhyChooseUs = () => {
   return (
@@ -41,17 +41,21 @@ const WhyChooseUsContainer = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0;
+  margin: 0 10% 0 10%;
 `;
 
 const WhyChooseUsContentContainer = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  width: 65%;
+  margin-right: 2rem;
 `;
 
 const WhyChooseUsTitle = styled.h1`
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 5%;
 `;
 
 const WhyChooseUsContent = styled.p`
@@ -62,8 +66,11 @@ const WhyChooseUsContent = styled.p`
 const WhyChooseUsList = styled.ul`
   list-style: disc;
   padding: 0;
+  margin: 0;
+  list-style-position: inside;
 `;
 
 const WhyChooseUsImage = styled.img`
   width: 50%;
+  border-radius: 8px;
 `;
