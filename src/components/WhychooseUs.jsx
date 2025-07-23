@@ -42,6 +42,20 @@ const WhyChooseUsContainer = styled.div`
   justify-content: center;
   text-align: center;
   margin: 0 10% 0 10%;
+  transition: margin 0.5s ease-in-out;
+
+  @media (max-width: 1200px) {
+    margin: 0 5% 0 5%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 5% 0 5%;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 2% 0 2%;
+  }
 `;
 
 const WhyChooseUsContentContainer = styled.div`
@@ -50,17 +64,41 @@ const WhyChooseUsContentContainer = styled.div`
   gap: 2rem;
   width: 65%;
   margin-right: 2rem;
+  transition: width 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+  }
 `;
 
 const WhyChooseUsTitle = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 5%;
+  transition: font-size 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const WhyChooseUsContent = styled.p`
   font-size: 1.2rem;
   line-height: 1.5;
+  transition: font-size 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const WhyChooseUsList = styled.ul`
@@ -73,4 +111,9 @@ const WhyChooseUsList = styled.ul`
 const WhyChooseUsImage = styled.img`
   width: 50%;
   border-radius: 8px;
+  transition: width 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;

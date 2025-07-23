@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Offers = () => {
   return (
     <OffersSectionContainer>
-      <OfferCardTitle>What we can offer you</OfferCardTitle>
+      <OfferCardTitle>Choose the best format for you</OfferCardTitle>
       <CardsGrid>
         <OfferCard>
           <CardTitle>Start Strong</CardTitle>
@@ -12,7 +12,7 @@ const Offers = () => {
             New to HYROX? Learn the format, master the basics, and build
             confidence in a supportive, coach-led environment.
           </CardDescription>
-          <CardButton>Join Foundation</CardButton>
+          <CardButton>Join Foundations</CardButton>
         </OfferCard>
 
         <OfferCard>
@@ -27,12 +27,12 @@ const Offers = () => {
 
         <OfferCard>
           <CardTitle>Train Like a Pro</CardTitle>
-          <CardSubtitle>Competetive Prep</CardSubtitle>
+          <CardSubtitle>Competitive Prep</CardSubtitle>
           <CardDescription>
             Dial in your technique and pacing with advanced HYROX workouts
             tailored for race prep.
           </CardDescription>
-          <CardButton>Book Your Spot</CardButton>
+          <CardButton>Join Competitive</CardButton>
         </OfferCard>
 
         <OfferCard>
@@ -92,6 +92,7 @@ const OfferCard = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 const CardTitle = styled.h2`

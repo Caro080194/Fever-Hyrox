@@ -11,6 +11,15 @@ const ContactFormContainer = () => {
         <input type="email" />
         <label>Message:</label>
         <textarea />
+        <label>Which offer are you interested in?</label>
+        <select>
+          <option value="">Select an option</option>
+          <option value="Foundations">Foundations</option>
+          <option value="Conditioning">Conditioning</option>
+          <option value="Competitive">Competitive</option>
+          <option value="Flexible">Flexible</option>
+          <option value="Not sure">Not sure</option>
+        </select>
         <input type="submit" value="Send Message" />
       </form>
     </ContactFormContainerStyled>
@@ -42,7 +51,7 @@ const ContactFormContainerStyled = styled.div`
       margin-bottom: 10px;
     }
 
-    input, textarea {
+    input, textarea, select {
       padding: 10px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
