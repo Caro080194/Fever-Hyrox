@@ -34,11 +34,30 @@ const ContactFormContainerStyled = styled.div`
   max-width: 500px;
   margin: 40px auto;
 
+  @media (max-width: 768px) { /* Tablet */
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  @media (max-width: 480px) { /* Phone */
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 350px;
+  }
+
   h2 {
     color: #FF3B30; /* Primary Fierce Red */
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) { /* Tablet */
+      font-size: 20px;
+    }
+
+    @media (max-width: 480px) { /* Phone */
+      font-size: 18px;
+    }
   }
 
   form {
@@ -49,6 +68,14 @@ const ContactFormContainerStyled = styled.div`
       font-size: 16px;
       color: #333333; /* Text Dark */
       margin-bottom: 10px;
+
+      @media (max-width: 768px) { /* Tablet */
+        font-size: 14px;
+      }
+
+      @media (max-width: 480px) { /* Phone */
+        font-size: 12px;
+      }
     }
 
     input, textarea, select {
@@ -56,6 +83,14 @@ const ContactFormContainerStyled = styled.div`
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
+
+      @media (max-width: 768px) { /* Tablet */
+        padding: 5px;
+      }
+
+      @media (max-width: 480px) { /* Phone */
+        padding: 2px;
+      }
     }
 
     input[type="submit"] {
@@ -66,6 +101,14 @@ const ContactFormContainerStyled = styled.div`
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
+
+      @media (max-width: 768px) { /* Tablet */
+        padding: 5px 10px;
+      }
+
+      @media (max-width: 480px) { /* Phone */
+        padding: 2px 5px;
+      }
 
       &:hover {
         background-color: #FF4136; /* darker shade of Fierce Red */

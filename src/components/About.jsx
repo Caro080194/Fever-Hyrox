@@ -37,6 +37,18 @@ const AboutMainContainer = styled.div`
   justify-content: space-around;
   text-align: center;
   margin: 3% 10% 5% 10%;
+
+  @media (max-width: 768px) { /* Tablet */
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5% 5% 5% 5%;
+  }
+
+  @media (max-width: 480px) { /* Phone */
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 10% 5% 10% 5%;
+  }
 `;
 
 const AboutContentContainer = styled.div`
@@ -45,18 +57,43 @@ const AboutContentContainer = styled.div`
   gap: 2rem;
   align-items: center;
   width: 50%;
+
+  @media (max-width: 768px) { /* Tablet */
+    width: 80%;
+  }
+
+  @media (max-width: 480px) { /* Phone */
+    width: 90%;
+  }
+
   .button-sporty {
-  width: fit-content;
+    width: fit-content;
   }
 `;
 
 const AboutContent = styled.p`
   font-size: 1.2rem;
   line-height: 1.5;
+
+  @media (max-width: 768px) { /* Tablet */
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) { /* Phone */
+    font-size: 0.8rem;
+  }
 `;
 
 const AboutImage = styled.img`
   width: 30%;
   margin: 2rem 0;
   border-radius: 8px;
+
+  @media (max-width: 768px) { /* Tablet */
+    width: 50%;
+  }
+
+  @media (max-width: 480px) { /* Phone */
+    width: 80%;
+  }
 `;

@@ -59,7 +59,10 @@ const OffersSectionContainer = styled.div`
   background-color: #F2F2F2; // Off-white neutral
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(28, 28, 30, 0.2); // Slightly stronger shadow with Fever dark
-`;
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
+  `;
 
 const OfferCardTitle = styled.h1`
   font-size: 24px;
@@ -67,6 +70,10 @@ const OfferCardTitle = styled.h1`
   margin-bottom: 20px;
   text-align: center;
   color: #FF3B30; // Fierce red
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+  }
 `;
 
 const CardsGrid = styled.div`
@@ -81,6 +88,9 @@ const CardsGrid = styled.div`
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 `;
 

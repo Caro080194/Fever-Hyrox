@@ -98,6 +98,8 @@ const WhyChooseUsContent = styled.p`
 
   @media (max-width: 480px) {
     font-size: 0.8rem;
+    width: 90%;
+    margin: 0 auto;
   }
 `;
 
@@ -106,6 +108,14 @@ const WhyChooseUsList = styled.ul`
   padding: 0;
   margin: 0;
   list-style-position: inside;
+
+  @media (max-width: 768px) {
+  margin-bottom: 2rem;
+  }
+
+  @media (max-width: 480px) {
+   font-size: 0.8rem;
+  }
 `;
 
 const WhyChooseUsImage = styled.img`
@@ -115,5 +125,10 @@ const WhyChooseUsImage = styled.img`
 
   @media (max-width: 768px) {
     width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 2rem;
+    width: 70%;
   }
 `;

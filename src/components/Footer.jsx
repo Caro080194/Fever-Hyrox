@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import Crossfit from "../assets/Crossfit.png";
 
 const Footer = () => {
   return (
     <FooterStyled>
       <FooterContainer>
         <Logo>
-          <img src="logo.png" alt="CrossFit Fever Logo" />
+          <img src={Crossfit} alt="CrossFit Fever Logo" />
         </Logo>
         <Info>
           <h3>CrossFit Fever</h3>
@@ -50,6 +51,10 @@ const FooterStyled = styled.footer`
   background-color: #1C1C1E; /* Charcoal Black */
   color: #FFFFFF; /* Text Light */
   padding: 40px 0;
+
+  @media (max-width: 480px) {
+    padding: 20px 0;
+  }
 `;
 
 const FooterContainer = styled.div`
@@ -58,6 +63,13 @@ const FooterContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 480px) {
+    max-width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Logo = styled.div`
@@ -67,12 +79,24 @@ const Logo = styled.div`
   img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-right: 0;
   }
 `;
 
 const Info = styled.div`
   width: 20%;
   margin-right: 20px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const Social = styled.div`
@@ -93,11 +117,23 @@ const Social = styled.div`
   a {
     color: #FFFFFF; /* Text Light */
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const HYROX = styled.div`
   width: 20%;
   margin-right: 20px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 `;
 
 const Copyright = styled.div`
