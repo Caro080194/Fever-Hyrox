@@ -19,7 +19,9 @@ const About = () => {
             or simply try something new, this is your chance to push boundaries
             alongside a like-minded crew.
           </AboutContent>
-          <button className="button-sporty">Join Us</button>
+          <a href="#contact">
+            <button className="button-sporty">Join Us</button>
+          </a>
         </AboutContentContainer>
       </AboutMainContainer>
     </>

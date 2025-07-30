@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 const Offers = () => {
+
+    const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <OffersSectionContainer>
       <OfferCardTitle>Choose the best format for you</OfferCardTitle>
@@ -12,7 +20,7 @@ const Offers = () => {
             New to HYROX? Learn the format, master the basics, and build
             confidence in a supportive, coach-led environment.
           </CardDescription>
-          <CardButton>Join Foundations</CardButton>
+          <CardButton onClick={scrollToContact}>Join Foundations</CardButton>
         </OfferCard>
 
         <OfferCard>
@@ -22,7 +30,7 @@ const Offers = () => {
             Take your stamina and strength to the next level with high-intensity
             sessions that mimic race-day energy.
           </CardDescription>
-          <CardButton>Join Conditioning</CardButton>
+          <CardButton onClick={scrollToContact}>Join Conditioning</CardButton>
         </OfferCard>
 
         <OfferCard>
@@ -32,7 +40,7 @@ const Offers = () => {
             Dial in your technique and pacing with advanced HYROX workouts
             tailored for race prep.
           </CardDescription>
-          <CardButton>Join Competitive</CardButton>
+          <CardButton onClick={scrollToContact}>Join Competitive</CardButton>
         </OfferCard>
 
         <OfferCard>
@@ -42,7 +50,7 @@ const Offers = () => {
             Drop-in classes, open gym hours, and flexible passes. Train on your
             terms, whenever you want.
           </CardDescription>
-          <CardButton>Join Flexible</CardButton>
+          <CardButton onClick={scrollToContact}>Join Flexible</CardButton>
         </OfferCard>
       </CardsGrid>
     </OffersSectionContainer>

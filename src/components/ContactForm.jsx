@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContactFormContainer = () => {
   return (
-    <ContactFormContainerStyled>
+    <ContactFormContainerStyled id="contact">
       <h2>Get in Touch</h2>
       <form>
         <label>Name:</label>

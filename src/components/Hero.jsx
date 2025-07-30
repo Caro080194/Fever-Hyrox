@@ -1,17 +1,21 @@
-import styled from 'styled-components';
-import heroImage from '../assets/hero-section.jpg';
+import styled from "styled-components";
+import heroImage from "../assets/hero-section.jpg";
 
 const Hero = () => {
   return (
     <HeroContainer>
       <HeroContent>
         <HeroTitle>Hyrox has finally arrived in Crossfit Fever</HeroTitle>
-        <HeroSubtitle>Looking for your next fitness challenge, check out our offers!</HeroSubtitle>
-        <button className='button-sporty'>Book your free session</button>
+        <HeroSubtitle>
+          Looking for your next fitness challenge, check out our offers!
+        </HeroSubtitle>
+        <a href="#contact">
+          <button className="button-sporty">Book your free session</button>
+        </a>
       </HeroContent>
     </HeroContainer>
   );
-}
+};
 export default Hero;
 
 // Styled components
@@ -27,13 +31,15 @@ const HeroContainer = styled.div`
   background-position: center;
   text-align: center;
 
-  @media (max-width: 768px) { /* Tablet */
+  @media (max-width: 768px) {
+    /* Tablet */
     height: 80vh;
     font-size: 24px; /* Reduce font size */
     line-height: 1.5; /* Reduce line height */
   }
 
-  @media (max-width: 480px) { /* Phone */
+  @media (max-width: 480px) {
+    /* Phone */
     height: 60vh;
     font-size: 18px; /* Reduce font size further */
     line-height: 1.2; /* Reduce line height further */
@@ -52,14 +58,14 @@ const HeroContent = styled.div`
   color: #fff;
   transition: bottom 0.5s ease-in-out;
 
-  @media (max-width: 768px) { /* Tablet */
+  @media (max-width: 768px) {
+    /* Tablet */
     position: relative;
     width: 90%;
     left: 0;
     top: 30%;
     transform: translateY(-50%);
   }
-
 `;
 
 const HeroTitle = styled.h1`

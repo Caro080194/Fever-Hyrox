@@ -48,8 +48,8 @@ const Footer = () => {
 };
 
 const FooterStyled = styled.footer`
-  background-color: #1C1C1E; /* Charcoal Black */
-  color: #FFFFFF; /* Text Light */
+  background-color: #1c1c1e; /* Charcoal Black */
+  color: #ffffff; /* Text Light */
   padding: 40px 0;
 
   @media (max-width: 480px) {
@@ -85,6 +85,11 @@ const Logo = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     margin-right: 0;
+    img {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+    }
   }
 `;
 
@@ -115,7 +120,7 @@ const Social = styled.div`
   }
 
   a {
-    color: #FFFFFF; /* Text Light */
+    color: #ffffff; /* Text Light */
   }
 
   @media (max-width: 480px) {
